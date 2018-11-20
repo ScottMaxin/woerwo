@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>沃尔沃</title>
+      <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<style>
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+     .one{
+     	width:100%;
+     	height:70px;
+     	display: flex;
+        border-top: 1px solid #B6B4B6;
+        position: fixed;
+        z-index: 999;
+        background: #fff;
+     }
+     .one>.one_{
+        width:48%;
+        height:70px;
+     }
+     .one>.one_>.onea{
+     	width:80%;
+     	height:70px;
+        display:flex;
+        line-height: 70px;
+     }
+     .one>.one_>.onea>.oneaa{
+        width:20%;
+     	font-size:15px;
+        display:flex;
+        justify-content: center;
+     }
+     .one>.one_>.onea>.oneaa>.oneaaa{
+     	width:15px;
+     	height:15px;
+     	background:url(img/xiazai.svg) no-repeat;
+     	background-size:100% 100%;
+     	display: inline-block;
+     	margin-left:5%;
+     	margin-top: 27px;
+     }
+     .one>.oneb{
+        width:70px;
+        height:70px;
+        background:url(img/biao1.png) no-repeat;
+        background-size:100% 100%;
+        display: inline-block;
+     }
+     .one>.one__{
+        width:39%;
+        height:70px;
+         display:flex;
+        justify-content: flex-end;
+     }
+     .one>.onea>.oneaaaa{
+        width:2.5%;
+     }
+     .one>.one__>.onec{
+        width:90%;
+        height:70px;
+        display:flex;
+        line-height: 70px;
+        justify-content: flex-end;
+     }
+     .one>.one__>.onec>.onecc{
+        width:20%;
+        font-size:15px;
+        display:flex;
+        justify-content: center;
+     }
+     .one>.oned{
+        width:5%;
+        height:70px;
+        border-left: 1px solid #E7E7E7;
+        border-right: 1px solid #E7E7E7;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+     }
+     .one>.oned>.onedd{
+        width:20px;
+        height:20px;
+        background:url(img/fang.png) no-repeat;
+        background-size: 100% 100%;
+     }
+     .one>.onee{
+        width:5%;
+        height:70px;
+        display:flex;
+        justify-content: center;
+        margin-top: 20px;
+     }
+     .one>.onee>.oneee{
+        width:30px;
+        height:30px;
+        background:url(img/tou.png) no-repeat;
+        background-size: 100% 100%;
+     }
+     .one>.onee>.oneeee{
+        width:15px;
+        height:15px;
+        background:url(img/jian.png) no-repeat;
+        background-size:100% 100%;
+        margin-top: 7px;
+     }
+       .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+      .carousel>.carousel-indicators>.active{
+        width:100px;
+      }
+      .a{
+        width:170px;
+        height:55px;
+        border: 1px solid #fff;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        font-size:17px;color:#fff;
+    }
+      .a:hover{
+        background:#fff;
+        color:#000;
+        list-style: none;
+      }
+      .a1{
+        color:#fff;
+      }
+      .a2{
+        font-size: 40px;
+      }
+      .a3{
+       font-size:17px;
+      }
+      .b{
+        width:170px;
+        height:55px;
+        border: 1px solid #fff;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        font-size:17px;color:#fff;
+      }
+      .b:hover{
+        background:#fff;
+        color:#000;
+      }
+      .b1{
+      color:#fff;
+      }
+      .b2{
+        font-size: 40px;
+      }
+      .c1{
+        color:#fff;
+      }
+      .c2{
+        font-size: 40px;
+      }
+      .c{
+        width:170px;
+        height:55px;
+        border: 1px solid #fff;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        font-size:17px;color:#fff;
+      }
+      .c:hover{
+        background:#fff;
+        color:#000;
+      }
+      .c3{
+       font-size:17px;
+   }
+      .t_{
+        width:100%;
+        height:690px;
+        display: flex;
+         align-items:center;
+         justify-content:space-evenly;
+      }
+      .two{
+        width:50%;
+        height:667px;
+      }
+      .two>.twoa{
+        width:100%;
+        height:100%;
+        background:url(img/futu1.jpg) no-repeat;
+        background-size: 100% 100%;
+        font-size: 25px;
+        display: flex;
+        align-items: flex-end;
+        padding:20px;
+        color:#fff;
+      }
+      .two>.twoa1{
+      	width:100%;
+        height:100%;
+      	background:rgba(0,0,0,0.5);
+      	margin-top: -667px;
+      	font-size: 25px;
+      	display: flex;
+        align-items: center;
+        padding:20px;
+        color:#fff;
+        flex-flow:row wrap;
+        position: relative;
+        visibility:hidden;
+              }
+        .two>.twoa0{
+      	display: flex;
+        align-items: center;
+        padding:20px;
+        color:#fff;
+        flex-flow:row wrap;
+        position: relative;
+        visibility:hidden;
+              }
+        .two>.twoa1>.twoa2{
+        width:100%;
+        color:#fff;
+        font-size: 16px;
+        margin-top: 50px;
+        position: absolute;
+           }
+        .two:hover .twoa1{
+       visibility:visible;
+      }
+       .two:hover .twoa0{
+       	visibility:hidden;
+       }
+      .two_a{
+        width:100%;
+        height:250px;
+      }
+      .two_a>.two_aa{
+        width:100%;
+        height:100%;
+        background:url(img/futu2.jpg) no-repeat;
+        background-size: 100% 100%;
+        font-size: 25px;
+        display: flex;
+        align-items: flex-end;
+        padding:20px;
+        color:#fff;
+      }
+      .two_a>.two_aa1{
+      	width:100%;
+        height:100%;
+      	background:rgba(0,0,0,0.5);
+      	margin-top: -250px;
+      	font-size: 25px;
+      	display: flex;
+        align-items: center;
+        padding:20px;
+        color:#fff;
+        flex-flow:row wrap;
+        position: relative;
+        visibility:hidden;
+              }
+        .two_a>.two_aa0{
+      	display: flex;
+        align-items: center;
+        padding:20px;
+        color:#fff;
+        flex-flow:row wrap;
+        position: relative;
+        visibility:hidden;
+              }
+        .two_a>.two_aa1>.two_aa2{
+        width:100%;
+        color:#fff;
+        font-size: 16px;
+        margin-top: 50px;
+        position: absolute;
+           }
+        .two_a:hover .two_aa1{
+       visibility:visible;
+      }
+       .two_a:hover .two_aa0{
+       	visibility:hidden;
+       }
+.two_b{
+        width:100%;
+        height:407px;
+      }
+      .two_b>.two_bb{
+        width:100%;
+        height:100%;
+        background:url(img/futu3.jpg) no-repeat;
+        background-size: 100% 100%;
+        font-size: 25px;
+        display: flex;
+        align-items: flex-end;
+        padding:20px;
+        color:#fff;
+      }
+
+
+      .two_b>.two_bb1{
+      	width:100%;
+        height:100%;
+      	background:rgba(0,0,0,0.5);
+      	margin-top: -407px;
+      	font-size: 25px;
+      	display: flex;
+        align-items: center;
+        padding:20px;
+        color:#fff;
+        flex-flow:row wrap;
+        position: relative;
+        visibility:hidden;
+              }
+        .two_b>.two_bb0{
+      	display: flex;
+        align-items: center;
+        padding:20px;
+        color:#fff;
+        flex-flow:row wrap;
+        position: relative;
+        visibility:hidden;
+              }
+        .two_b>.two_bb1>.two_bb2{
+        width:100%;
+        color:#fff;
+        font-size: 16px;
+        margin-top: 50px;
+        position: absolute;
+           }
+        .two_b:hover .two_bb1{
+       visibility:visible;
+      }
+       .two_b:hover .two_bb0{
+       	visibility:hidden;
+       }
+.two_c{
+        width:100%;
+        height:407px;
+      }
+      .two_c>.two_cc{
+        width:100%;
+        height:100%;
+        background:url(img/futu4.jpg) no-repeat;
+        background-size: 100% 100%;
+        font-size: 25px;
+        display: flex;
+        align-items: flex-end;
+        padding:20px;
+        color:#fff;
+      }
+        .two_c>.two_cc1{
+      	width:100%;
+        height:100%;
+      	background:rgba(0,0,0,0.5);
+      	margin-top: -407px;
+      	font-size: 25px;
+      	display: flex;
+        align-items: center;
+        padding:20px;
+        color:#fff;
+        flex-flow:row wrap;
+        position: relative;
+        visibility:hidden;
+              }
+        .two_c>.two_cc0{
+      	display: flex;
+        align-items: center;
+        padding:20px;
+        color:#fff;
+        flex-flow:row wrap;
+        position: relative;
+        visibility:hidden;
+              }
+        .two_c>.two_cc1>.two_cc2{
+        width:100%;
+        color:#fff;
+        font-size: 16px;
+        margin-top: 50px;
+        position: absolute;
+           }
+        .two_c:hover .two_cc1{
+       visibility:visible;
+      }
+       .two_c:hover .two_cc0{
+       	visibility:hidden;
+       }
+      .tw{
+        width:24%;
+         height:675px;
+         display: flex;
+         align-items:center;
+         justify-content:center;
+          flex-flow:row wrap;
+      }
+      .tw_{
+        width:24%;
+         height:675px;
+         display: flex;
+         align-items:center;
+         justify-content:center;
+          flex-flow:row wrap;
+      }
+      .two_d{
+        width:100%;
+        height:250px;
+      }
+      .two_d>.two_dd{
+        width:100%;
+        height:100%;
+        background:url(img/futu5.jpg) no-repeat;
+        background-size: 100% 100%;
+        font-size: 25px;
+        display: flex;
+        align-items: flex-end;
+        padding:20px;
+        color:#fff;
+      }
+        .two_d>.two_dd1{
+      	width:100%;
+        height:100%;
+      	background:rgba(0,0,0,0.5);
+      	margin-top: -250px;
+      	font-size: 25px;
+      	display: flex;
+        align-items: center;
+        padding:20px;
+        color:#fff;
+        flex-flow:row wrap;
+        position: relative;
+        visibility:hidden;
+              }
+        .two_d>.two_dd0{
+      	display: flex;
+        align-items: center;
+        padding:20px;
+        color:#fff;
+        flex-flow:row wrap;
+        position: relative;
+        visibility:hidden;
+              }
+        .two_d>.two_dd1>.two_dd2{
+        width:100%;
+        color:#fff;
+        font-size: 16px;
+        margin-top: 50px;
+        position: absolute;
+           }
+        .two_d:hover .two_dd1{
+       visibility:visible;
+      }
+       .two_d:hover .two_dd0{
+       	visibility:hidden;
+       }
+      .scree{
+       width:100%;
+         height:80px;
+         display: flex;
+         align-items:flex-end;
+         justify-content:center; 
+          font-size: 30px;
+      }
+      .scree_{
+       width:100%;
+         height:50px;
+         display: flex;
+         align-items:center;
+         justify-content:center;
+         font-size: 16px;
+      }
+      .for{
+        width:338px;
+        height:375px;
+         display: flex;
+         align-items:center;
+         justify-content:center;
+          flex-flow:row wrap;
+      }
+      .f{
+        width:100%;
+        height:375px;
+        display: flex;
+         justify-content:center;       
+          margin-top: 50px;
+      }
+      .for>.z1{
+        width:100%;
+        height:132px; 
+        display: flex;
+       align-items:center;
+      }
+      .for>.z1>.z11{
+        width:100%;
+        height:125px;
+        
+     
+      }
+      .f_{
+        width:75%;
+        height:375px;
+        display: flex;
+         justify-content:center; 
+      }
+      .z2{
+        font-size: 20px;
+      }
+      .z3{
+        width:90%;
+        display: flex;
+         justify-content:center; 
+          text-align: center;   
+      }
+      .z4{
+        width:100%;
+        color:#007BCD;
+        display: flex;
+         justify-content:center; 
+         font-size:17px;   
+      }
+      .z{
+        width:85%;
+        height:50px;
+        border: 1px solid #007BCD;
+        display: flex;
+         justify-content:center; 
+         align-items:center;
+         color:#007BCD;
+         font-size:17px;
+      }
+      .z:hover{
+        background:#007BCD ;
+        color:#fff;
+      }
+      .for1{
+        width:338px;
+        height:375px;
+         display: flex;
+         align-items:center;
+         justify-content:center;
+          flex-flow:row wrap;
+      }
+      .for1>.w1{
+        width:100%;
+        height:132px; 
+        display: flex;
+       align-items:center;
+      }
+      .for1>.w1>.w11{
+        width:100%;
+        height:125px;
+        
+     
+      }
+      .w2{
+        font-size: 20px;
+      }
+      .w3{
+        width:90%;
+        display: flex;
+         justify-content:center; 
+          text-align: center;   
+      }
+      .w4{
+        width:100%;
+        color:#007BCD;
+        display: flex;
+         justify-content:center; 
+         font-size:17px;   
+      }
+      .w{
+        width:85%;
+        height:50px;
+        border: 1px solid #007BCD;
+        display: flex;
+         justify-content:center; 
+         align-items:center;
+         color:#007BCD;
+         font-size:17px;
+      }
+      .w:hover{
+        background:#007BCD ;
+        color:#fff;
+      }
+      .for2{
+        width:338px;
+        height:375px;
+         display: flex;
+         align-items:center;
+         justify-content:center;
+          flex-flow:row wrap;
+      }
+      .for2>.x1{
+        width:100%;
+        height:132px; 
+        display: flex;
+       align-items:center;
+      }
+      .for2>.x1>.x11{
+        width:100%;
+        height:125px;
+        
+     
+      }
+      .x2{
+        font-size: 20px;
+      }
+      .x3{
+        width:90%;
+        display: flex;
+         justify-content:center;
+         text-align: center;    
+      }
+      .x4{
+        width:100%;
+        color:#007BCD;
+        display: flex;
+         justify-content:center; 
+         font-size:17px;   
+      }
+      .x{
+        width:85%;
+        height:50px;
+        border: 1px solid #007BCD;
+        display: flex;
+         justify-content:center; 
+         align-items:center;
+         color:#007BCD;
+         font-size:17px;
+      }
+      .x:hover{
+        background:#007BCD ;
+        color:#fff;
+      }
+      .six{
+        width:100%;
+        height:740px;
+        background:#000;
+        margin-top: 50px;
+      }
+      .six>.s{
+        width:100%;
+        height:130px;      
+         display: flex;
+         justify-content:center; 
+         align-items:flex-end;
+         text-align: center; 
+         color:#fff;
+      }
+      .si{
+        width:100%;
+        height:100px;        
+        display: flex;
+         justify-content:center; 
+         align-items:flex-end;
+         color:#fff;
+      }
+      .si>.sia{
+        width:125px;
+      }
+       .si_{
+        width:100%;
+        height:65px;
+        display: flex;
+         justify-content:center; 
+         align-items:flex-end;
+         color:#fff;
+         font-weight: 600;
+         font-size: 20px;
+      }
+      .si_>.si_a{
+        width:100px;
+         display: flex;
+         justify-content:center; 
+      }
+      .si_aa{
+        width:20px;
+        height:20px;
+      }
+       .six_{
+        width:100%;
+        height:65px;
+        display: flex;
+         justify-content:center; 
+         align-items:center;
+         color:#fff;
+         font-size: 20px;
+      }
+      .six_>.six_a{
+        width:60px;
+         display: flex;
+         justify-content:center; 
+      }
+      .six_>.six_a1{
+        width:306px;
+         display: flex;
+         justify-content:center; 
+      }
+      .six_aa{
+        width:20px;
+        height:20px;
+      }
+      .seven{
+        width:100%;
+        height:10px;      
+         display: flex;
+         justify-content:center; 
+         align-items:flex-end;
+         text-align: center; 
+         color:#fff;
+         font-weight: 600;
+      }
+      .sevens{
+        width:100%;
+        height:100px;      
+         display: flex;
+         justify-content:center; 
+         align-items:flex-end;
+         text-align: center; 
+         color:#fff;
+      }
+       .seven_{
+        width:100%;
+        height:40px;
+        display: flex;
+         justify-content:center; 
+         align-items:flex-end;
+         color:#fff;
+      }
+      .seven_>.seven_c{
+        width:84px;
+         display: flex;
+         justify-content:center; 
+      }
+      .seven_>.seven_b{
+        width:40px;
+         display: flex;
+         justify-content:center; 
+      }
+      .seven_>.seven_a{
+        width:56px;
+         display: flex;
+         justify-content:center; 
+      }
+       .zzz{
+        width:100%;
+        height:65px;        
+        display: flex;
+         justify-content:center; 
+         align-items:flex-end;
+         color:#fff;
+      }
+      .zzz>.azz{
+        width:45px;
+        font-weight: 600;
+        font-size: 25px;
+      }
+      .xxx{
+        width:200px;
+        height:55px;
+        border: 1px solid #fff;
+        display: flex;
+         justify-content:center; 
+         align-items:center;
+         color:#fff;
+         font-size:17px;
+      }
+      .xxx:hover{
+        background:#fff ;
+        color:#000;
+      }
+    .xxz{
+        width:15px;
+        height:15px;
+        background: url(img/shang.png) no-repeat;
+        background-size: 100% 100%;
+        margin-left: 10px;
+      }
+      .xxxx{
+        height:120px;
+         display: flex;
+         justify-content:center;
+         align-items:center;
+
+      }
+      .xxx:hover .xxz{
+        width:15px;
+        height:15px;
+        background: url(img/shang1.png) no-repeat;
+        background-size: 100% 100%;
+        margin-left: 10px;
+      }
+.one>.one_>ul>li:hover{
+           width:64px;
+           height:69px;
+           display:inline-block;
+           border-bottom:2px solid #48A5F4;
+        }
+        .one>.one__>ul>li:hover{
+           width:64px;
+           height:69px;
+           display:inline-block;
+           border-bottom:2px solid #48A5F4;
+        }
+        .one>.onee:hover{
+           width:5%;
+           height:49px;
+           display:inline-block;
+           border-bottom:2px solid #48A5F4;
+           display:flex;
+           justify-content: center;
+        }
+        .carousel-caption{
+        	width:245px;
+        	height:270px;
+        	display: flex;
+        	justify-content: flex-end;
+        	flex-flow:row wrap;	
+        	align-items: center;
+        	position: absolute;
+        	top:450px;
+        	left: 80%;
+        }
+	</style>
+</head>
+<body>
+	<div class = 'one'>
+    <div class="one_">
+    <ul class="onea">
+    	<li class="oneaa">车型概括<p class = "oneaaa"></p></li><p class="oneaaaa"></p>
+    	<li class="oneaa">购车工具与支持<p class = "oneaaa"></p></li><p class="oneaaaa"></p>
+    	<li class="oneaa">售后与支持<p class = "oneaaa"></p></li><p class="oneaaaa"></p>
+    	<li class="oneaa">沃尔沃天地<p class = "oneaaa"></p></li>
+    </ul>
+    </div>
+    <p class= "oneb"></p>
+    <div class="one__">
+    <ul class="onec">
+    	<li class="onecc">配置您的沃尔沃</li>
+    	<li class="onecc">查找经销商</li>
+    	<li class="onecc">大客户与二手车</li>
+    </ul>
+    </div>
+    <div class="oned"><p class="onedd"></p>
+       </div>
+    <div class="onee"><p class="oneee"></p><pre class="oneeee"></pre>  
+</div>
+	</div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul> 
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/zhutu1.jpg">
+      <div class="carousel-caption">
+        <pre class="a1">路 · 见不凡</pre>
+        <h1 class="a2">沃尔沃 XC60</h1>
+        <p class="a3">720小时深度试驾火热招募中</p>
+        <a href="沃尔沃XC60.html"><div class="a">了解详情 ></div></a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/zhutu2.jpg">
+      <div class="carousel-caption">
+        <pre class="b1">智取清新 事不宜迟</pre>
+        <h1 class="b2">沃尔沃 S90</h1>
+        <div class="b">了解详情 ></div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/zhutu3.jpg">
+      <div class="carousel-caption">
+        <pre class="c1">阅天地 揽格局</pre>
+        <h1 class="c2">沃尔沃 XC90</h1>
+        <p class="c3">北欧豪华七座SUV</p>
+        <div class="c">了解详情 ></div>
+      </div>
+    </div>
+  </div>
+ </div>
+ <div class="t_">
+ <div class="two"><pre class="twoa"><p class="twoa0">T8 E驱混动</p></pre><p class="twoa1">T8 E驱混动<a href="" class="twoa2"><u>了解详情</u></a></p></div>
+ <div class="tw">
+ <div class="two_a"><pre class="two_aa"><p class="two_aa0">大有享法</p></pre><p class="two_aa1">大有享法<a href="" class="two_aa2"><u>了解详情</u></a></p></div>
+ <div class="two_b"><pre class="two_bb"><p class="two_bb0">V90 CROSS COUNTRY</p></pre><p class="two_bb1">V90 CROSS COUNTRY<br>行有径 心逸远<a href="" class="two_bb2"><u>了解详情</u></a></p></div>
+ </div>
+ <div class="tw_">
+ <div class="two_c"><pre class="two_cc"><p class="two_cc0">对话高晓松</p></pre><p class="two_cc1">对话高晓松<br>遇见·沃尔沃的诗和远方<a href="沃尔沃的诗和远方.html" class="two_cc2"><u>了解详情</u></a></p></div>
+ <div class="two_d"><pre class="two_dd"><p class="two_dd0">2018 驾控体验营</p></pre><p class="two_dd1">2018 驾控体验营<a href="2018沃尔沃驾控体验营.html" class="two_dd2"><u>了解详情</u></a></p></div></div></div>
+ <div class="scree">配置您的沃尔沃</div>
+ <div class="scree_">承袭北欧经典 至简美学诠释豪华品位</div>
+ <div class="f">
+ <div class="f_">
+ <div class="for">
+        <pre class="z1"><img src="img/1.webp" alt="" class="z11"></pre>
+        <h1 class="z2">XC60</h1>
+        <p class="z3">人生，应该活出自己的样子。驾驭沃尔沃XC60一路向前，去经历，去感受，去遇见前所未见，成就自己的不凡人生路。</p>
+        <h2 class="z4">了解详情 ></h2>
+        <a href="XC60.html" class="z"><div>配置您的全新 XC60 ></div></a>
+ </div>
+<div class="for1">
+        <pre class="w1"><img src="img/che1.jpg" alt="" class="w11"></pre>
+        <h1 class="w2">S90</h1>
+        <p class="w3">沃尔沃S90豪华轿车，秉持以人为尊的品牌理念，以斯堪的纳维亚设计诠释北欧豪华，满载人性化创新科技，以智能引领驾驶的未来。</p>
+        <h2 class="w4">了解详情 ></h2>
+        <a href="S90.html" class="w"><div>配置您的 S90 ></div></a>
+ </div>
+ <div class="for2">
+        <pre class="x1"><img src="img/2.webp" alt="" class="x11"></pre>
+        <h1 class="x2">XC90</h1>
+        <p class="x3">沃尔沃XC90承袭北欧经典，至简美学诠释豪华品味，匠心造诣雕琢大器空间，前瞻创新洞见趋势。驰骋天地，执掌未来格局。</p>
+        <h2 class="x4">了解详情 ></h2>
+        <a href="XC90.html" class="x"><div>配置您的 XC90 ></div></a>
+ </div>
+ </div></div>
+ <div class="six">
+     <div class="s">沃尔沃汽车在世界范围内销售，产品的售价、配置等因不同区域的市场而不同。网站中包含的图片、建议零售价格、配置仅供<br>参考，与实际销售的产品存在不一致时，请以当地沃尔沃授权经销商实报售价、配置为准。<br>请您务必与当地沃尔沃授权经销商确认车型版本及附件产品的详细信息，以确保该等信息的准确性。   
+     </div>
+     <ul class="si">
+         <li class="sia">联系我们 ></li>
+         <li class="sia">人才招聘 ></li>
+         <li class="sia">品牌新闻 ></li>
+         <li class="sia">经销商招聘 ></li>
+         <li class="sia">环保信息公开 ></li>
+     </ul>
+     <ul class="si_">
+         <li class="si_a"><img class="si_aa" src="img/weixin.png" alt=""></li>
+         <li class="si_a">Youku</li>
+         <li class="si_a"><img class="si_aa" src="img/weibo.png" alt=""></li>
+     </ul>
+     <ul class="six_">
+         <li class="six_a"><img src="img/diqiu.png" alt="" class="six_aa"></li>
+         <li class="six_a1">Volvo Cars 沃尔沃汽车中国官网</li>
+     </ul>
+     <div class="seven">Change Location ></div>
+     <div class="sevens">版权所有 @ 2018 沃尔沃汽车销售（上<br>海）有限公司（或其附属公司或许可<br>方）| 沪ICP备13015731号</div>
+     <ul class="seven_">
+         <li class="seven_a">法律声明</li>
+         <li class="seven_b">|</li>
+         <li class="seven_c">客户隐私政策</li>
+     </ul>
+     <ul class="zzz">
+         <li class="azz">V</li>
+         <li class="azz">O</li>
+         <li class="azz">L</li>
+         <li class="azz">V</li>
+         <li class="azz">O</li>
+     </ul>
+    <a href=""><div class="xxxx"><div class="xxx">返回顶部<p class="xxz"></p></div></div></a> 
+ </div>
+</body>
+</html>

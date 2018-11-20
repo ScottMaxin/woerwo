@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2018沃尔沃驾控体验营</title>
+<style>
+		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+.one{
+      width:100%;
+      height:70px;
+      display: flex;
+      border-top: 1px solid #B6B4B6;
+      position: fixed;
+      z-index: 999;
+      background: #fff;
+     }
+     .one>.one_{
+        width:48%;
+        height:70px;
+     }
+     .one>.one_>.onea{
+      width:80%;
+      height:70px;
+        display:flex;
+        line-height: 70px;
+        margin:0px;
+     }
+     .one>.one_>.onea>.oneaa{
+        width:20%;
+      font-size:15px;
+        display:flex;
+        justify-content: center;
+     }
+     .one>.one_>.onea>.oneaa>.oneaaa{
+      width:15px;
+      height:15px;
+      background:url(img/xiazai.svg) no-repeat;
+      background-size:100% 100%;
+      display: inline-block;
+      margin-left:5%;
+      margin-top: 27px;
+     }
+     .one>.oneb{
+        width:70px;
+        height:70px;
+        background:url(img/biao1.png) no-repeat;
+        background-size:100% 100%;
+        display: inline-block;
+        margin:0px;
+     }
+     .one>.one__{
+        width:39%;
+        height:70px;
+         display:flex;
+        justify-content: flex-end;
+     }
+     .one>.onea>.oneaaaa{
+        width:2.5%;
+     }
+     .one>.one__>.onec{
+        width:90%;
+        height:70px;
+        display:flex;
+        line-height: 70px;
+        justify-content: flex-end;
+        margin:0px;
+     }
+     .one>.one__>.onec>.onecc{
+        width:20%;
+        font-size:15px;
+        display:flex;
+        justify-content: center;
+     }
+     .one>.oned{
+        width:5%;
+        height:70px;
+        border-left: 1px solid #E7E7E7;
+        border-right: 1px solid #E7E7E7;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+     }
+     .one>.oned>.onedd{
+        width:20px;
+        height:20px;
+        background:url(img/fang.png) no-repeat;
+        background-size: 100% 100%;
+     }
+     .one>.onee{
+        width:5%;
+        height:70px;
+        display:flex;
+        justify-content: center;
+        margin-top: 20px;
+     }
+     .one>.onee>.oneee{
+        width:30px;
+        height:30px;
+        background:url(img/tou.png) no-repeat;
+        background-size: 100% 100%;
+        margin:0px;
+     }
+     .one>.onee>.oneeee{
+        width:15px;
+        height:15px;
+        background:url(img/jian.png) no-repeat;
+        background-size:100% 100%;
+        margin-top: 7px;
+     }
+       .one>.one_>ul>li:hover{
+           width:64px;
+           height:68px;
+           display:inline-block;
+           border-bottom:3px solid #48A5F4;
+        }
+        .one>.one__>ul>li:hover{
+           width:64px;
+           height:68px;
+           display:inline-block;
+           border-bottom:3px solid #48A5F4;
+        }
+        .one>.onee:hover{
+           width:5%;
+           height:48px;
+           display:inline-block;
+           border-bottom:3px solid #48A5F4;
+           display:flex;
+           justify-content: center;
+        }
+        .onez{
+          width:100%;
+          height:50px;
+          background: #000;
+          margin-top: 62px;
+          position: fixed;
+          z-index: 99;
+          display: flex;
+        }
+        .onez1{
+          width:50%;
+          color:#fff;
+          line-height: 50px;
+          margin-left:70px; 
+        }
+        .two{
+        	width:100%;
+        	height:940px;
+            background: url(img/z.jpg) no-repeat;
+            background-size: 100% 100%;
+        }
+        .two1{
+            width:100%;
+            height:126px;
+            margin-top: 50px;
+        }
+        .two2{
+        	width:100%;
+        	font-size:20px; 
+        	font-weight:600;
+        	color: #161618;
+        	text-align:center;
+        }
+        .two3{
+            font-size:14px;
+            color: #161618;
+            text-align:center;
+            margin-top: 10px;
+        }
+        .two4{
+            width:100%;
+            height:126px;
+            margin-top: 50px;
+        }
+        .two5{
+        	width:100%;
+        	font-size:20px; 
+        	font-weight:600;
+        	color: #161618;
+        	text-align:center;
+        }
+        .two6{
+            font-size:14px;
+            color: #161618;
+            text-align:center;
+            margin-top: 10px;
+        }
+        .fix{
+      	width:100%;
+      	height:596px;
+      	display: flex;
+      	margin-top: 50px;
+      	display: flex;
+      	justify-content: center;
+      }
+      .fix_a{
+      	width:727px;
+      	height:596px;
+      }
+      .fix_b{
+      	width:26%;
+      	margin-left: 50px;
+      }
+      .fix_ba{
+      	width:498px;
+      	height:355px;
+      	line-height: 30px;
+      	margin-top: 50px;
+      }
+      .fix_{
+      	width:498px;
+      	height:285px;
+      }
+      .afix{
+      	width:100%;
+      	height:414px;
+      	display: flex;
+      	margin-top: 50px;
+      	display: flex;
+      	justify-content: center;
+      }
+      .afix_a{
+      	width:620px;
+      	height:424px;
+      }
+      .afix_b{
+      	width:50%;
+      	display: flex;
+      	justify-content: center;
+      	flex-flow:row wrap;
+      }
+      .afix_ba{
+      	width:80%;
+      	height:355px;
+      	line-height: 30px;
+      	text-align:center;
+      	margin-top: 50px;
+      }
+      .afix_{
+      	font-size:20px;
+      	 font-weight:600;
+      	 color: #161618;
+      	 text-align:center;
+      	 margin-top: 50px;
+      }
+       .bfix{
+      	width:100%;
+      	height:596px;
+      	display: flex;
+      	margin-top: 50px;
+      	display: flex;
+      	justify-content: center;
+      }
+      .bfix_a{
+      	width:727px;
+      	height:596px;
+      }
+      .bfix_b{
+      	width:26%;
+      	margin-left: 50px;
+      }
+      .bfix_ba{
+      	width:498px;
+      	height:355px;
+      	line-height: 30px;
+      }
+      .bfix_{
+      	width:498px;
+      	height:280px;
+      }
+      .bafix_{
+      	width:498px;
+      	font-size:20px;
+      	 font-weight:600;
+      	 color: #161618;
+      	 text-align:center;
+      	 margin-top: 50px;
+      }
+     .cfix{
+      	width:100%;
+      	height:414px;
+      	display: flex;
+      	margin-top: 50px;
+      	display: flex;
+      	justify-content: center;
+      }
+      .cfix_a{
+      	width:620px;
+      	height:424px;
+      }
+      .cfix_b{
+      	width:50%;
+      	display: flex;
+      	justify-content: center;
+      	flex-flow:row wrap;
+      }
+      .cfix_ba{
+      	width:80%;
+      	height:355px;
+      	line-height: 30px;
+      	text-align:center;
+      	margin-top: 50px;
+      }
+      .cfix_{
+      	font-size:20px;
+      	 font-weight:600;
+      	 color: #161618;
+      	 text-align:center;
+      	 margin-top: 50px;
+      }
+      .eng{
+      	width:100%;
+      	height:1071px;
+      	background: url(img/pc.jpg) no-repeat;
+      	background-size: 100% 100%;
+      	margin-top: 50px;
+      }
+       .six{
+        width:100%;
+        height:710px;
+        background:#000;
+        margin-top: -138px;
+      }
+      .six>.s{
+        width:100%;
+        height:130px;      
+         display: flex;
+         justify-content:center; 
+         align-items:flex-end;
+         text-align: center; 
+         color:#fff;
+         font-size: 13px;
+      }
+      .si{
+        width:100%;
+        height:100px;        
+        display: flex;
+         justify-content:center; 
+         align-items:flex-end;
+         color:#fff;
+      }
+      .si>.sia{
+        width:125px;
+      }
+       .si_{
+        width:100%;
+        height:65px;
+        display: flex;
+         justify-content:center; 
+         align-items:flex-end;
+         color:#fff;
+         font-weight: 600;
+         font-size: 20px;
+      }
+      .si_>.si_a{
+        width:100px;
+         display: flex;
+         justify-content:center; 
+      }
+      .si_aa{
+        width:20px;
+        height:20px;
+      }
+       .six_{
+        width:100%;
+        height:65px;
+        display: flex;
+         justify-content:center; 
+         align-items:center;
+         color:#fff;
+         font-size: 20px;
+      }
+      .six_>.six_a{
+        width:60px;
+         display: flex;
+         justify-content:center; 
+      }
+      .six_>.six_a1{
+        width:210px;
+         display: flex;
+         justify-content:center; 
+         font-size: 14px;
+      }
+      .six_aa{
+        width:20px;
+        height:20px;
+      }
+      .seven{
+        width:100%;
+        height:10px;      
+         display: flex;
+         justify-content:center; 
+         align-items:flex-end;
+         text-align: center; 
+         color:#fff;
+         font-weight: 600;
+         font-size: 13px;
+      }
+      .sevens{
+        width:100%;
+        height:100px;      
+         display: flex;
+         justify-content:center; 
+         align-items:flex-end;
+         text-align: center; 
+         color:#fff;
+         font-size: 15px;
+      }
+       .seven_{
+        width:100%;
+        height:40px;
+        display: flex;
+         justify-content:center; 
+         align-items:flex-end;
+         color:#fff;
+      }
+      .seven_>.seven_c{
+        width:96px;
+         display: flex;
+         justify-content:center; 
+      }
+      .seven_>.seven_b{
+        width:40px;
+         display: flex;
+         justify-content:center; 
+      }
+      .seven_>.seven_a{
+        width:65px;
+         display: flex;
+         justify-content:center; 
+      }
+       .zzz{
+        width:100%;
+        height:65px;        
+        display: flex;
+         justify-content:center; 
+         align-items:flex-end;
+         color:#fff;
+      }
+      .zzz>.azz{
+        width:45px;
+        font-weight: 600;
+        font-size: 25px;
+      }
+      .xxx{
+        width:200px;
+        height:55px;
+        border: 1px solid #fff;
+        display: flex;
+         justify-content:center; 
+         align-items:center;
+         color:#fff;
+         font-size:17px;
+      }
+      .xxx:hover{
+        background:#fff ;
+        color:#000;
+      }
+    .xxz{
+        width:15px;
+        height:15px;
+        background: url(img/shang.png) no-repeat;
+        background-size: 100% 100%;
+        margin-left: 10px;
+      }
+      .xxxx{
+        height:120px;
+         display: flex;
+         justify-content:center;
+         align-items:center;
+
+      }
+      .xxx:hover .xxz{
+        width:15px;
+        height:15px;
+        background: url(img/shang1.png) no-repeat;
+        background-size: 100% 100%;
+        margin-left: 10px;
+      }
+</style>
+<body>
+	  <div class = 'one'>
+    <div class="one_">
+    <ul class="onea">
+      <li class="oneaa">车型概括<p class = "oneaaa"></p></li><p class="oneaaaa"></p>
+      <li class="oneaa">购车工具与支持<p class = "oneaaa"></p></li><p class="oneaaaa"></p>
+      <li class="oneaa">售后与支持<p class = "oneaaa"></p></li><p class="oneaaaa"></p>
+      <li class="oneaa">沃尔沃天地<p class = "oneaaa"></p></li>
+    </ul>
+    </div>
+    <p class= "oneb"></p>
+    <div class="one__">
+    <ul class="onec">
+      <li class="onecc">配置您的沃尔沃</li>
+      <li class="onecc">查找经销商</li>
+      <li class="onecc">大客户与二手车</li>
+    </ul>
+    </div>
+    <div class="oned"><p class="onedd"></p>
+       </div>
+    <div class="onee"><p class="oneee"></p><pre class="oneeee"></pre>  
+</div>
+  </div>
+  <div class="onez">
+     <div class="onez1">2018沃尔沃驾控体验营</div>
+  </div>
+  <div class="two"></div>
+  <div class="two1">
+  	<h1 class="two2">2018 沃尔沃 智能驾控体验营</h1>
+  	<p class="two3">坐享喧嚣中的绿洲，360 近距离感受掌控随心的驾驭之道，<br>驾道融合VR虚拟现实体验，共同感受沃尔沃独具的北欧豪华和“驾驶之道”。</p>
+  </div>
+  <embed src="img/a.mp4" width="100%" height="1070px" autostart="true"></embed>
+   <div class="two4">
+  	<h1 class="two5">2018沃尔沃智能驾控体验营正式开营</h1>
+  	<p class="two6">“沃尔沃驾道”是面向公众的沃尔沃品牌和产品体验平台，集车型展示、试驾挑战、洽谈休闲于一体的综合性<br>体验平台。2017年，沃尔沃首创“沃尔沃驾道”体验平台，吸引了4100多位参与者，以其创新的形式、丰富<br>的体验和富有趣味的北欧风格，触发全城热点，并在当年载誉多项营销类大奖。</p>
+  </div>
+  	<div class="fix">
+      <img src="img/01.jpg" alt="" class="fix_a">
+      <div class="fix_b">
+      <img src="img/02.jpg" alt="" class="fix_">
+      <div class="fix_ba">体验者在车内带上VR虚拟现实眼镜，一路经历沉浸于北欧海岛的自然美景：从北欧小镇、宽阔的原始森林、到丛林泥塘、还能遇野外麋鹿。“人”、“车”、“自然”，如此和谐而有趣，正是沃尔沃“以人为尊”的驾驶之道。
+      </div>
+      </div>
+	</div>
+	<div class="afix">
+      <div class="afix_b">
+      <div class="afix_">卓然座驾 征服车轮所至</div>
+      <div class="afix_ba">作为“沃尔沃驾道”的主角，沃尔沃XC90、全新沃尔沃XC60精彩表现让人折服。无论是拥有320匹马力的XC90，还是拥有254匹马力的全新XC60，皆能在驾道轻松驰骋。其中，XC90 搭载“沃德十佳发动机” Drive-E E驱智能科技，T6双增压发动机，瞬间达到最高输出功率235千瓦，峰值扭矩400牛•米，轻松上下坡，在双层旋转道路上游刃有余。
+      </div>
+      </div>
+      <img src="img/6.webp" alt="" class="afix_a">
+	</div>
+	  	<div class="bfix">
+      <img src="img/11.jpg" alt="" class="bfix_a">
+      <div class="bfix_b">
+      <img src="img/12.jpg" alt="" class="bfix_">
+      <div class="bafix_">挑战五种路况，沉浸北欧时光</div>
+      <div class="bfix_ba">有别于普通的路面试驾，“沃尔沃驾道”在城市中心，安装独特设计的两层旋转路面装置。参与者可以在驾道上体验V型沟、颠簸路、交叉轴、侧坡、滑轮组五种惊险路况，充分考验沃尔沃SUV的动力性能、通过性和底盘调教和抓地力。
+      </div>
+      </div>
+	</div>
+		<div class="cfix">
+      <div class="cfix_b">
+      <div class="cfix_">享受一段瑞典人独有的FIKA时光</div>
+      <div class="cfix_ba">沃尔沃更邀请参与者到洽谈休息区，在斯堪的纳维亚客厅，感受城市绿洲，与三五好友来一场瑞典FIKA，享受北欧惬意时光。</div>
+      </div>
+      <img src="img/13.jpg" alt="" class="cfix_a">
+	</div>
+	<div class="eng"></div>
+	 <div class="six">
+     <div class="s">沃尔沃汽车在世界范围内销售，产品的售价、配置等因不同区域的市场而不同。网站中包含的图片、建议零售价格、配置仅供参考，与实际销售的产品存在不一致时，请以当地沃尔沃授权经销商实报售价、配置为准。请您务必与当地沃尔沃授权经销商确认车型版本及附件产品的详细信息，以确保该等信息的准确性。   
+     </div>
+     <ul class="si">
+         <li class="sia">联系我们 ></li>
+         <li class="sia">人才招聘 ></li>
+         <li class="sia">品牌新闻 ></li>
+         <li class="sia">经销商招聘 ></li>
+         <li class="sia">环保信息公开 ></li>
+     </ul>
+     <ul class="si_">
+         <li class="si_a"><img class="si_aa" src="img/weixin.png" alt=""></li>
+         <li class="si_a">Youku</li>
+         <li class="si_a"><img class="si_aa" src="img/weibo.png" alt=""></li>
+     </ul>
+     <ul class="six_">
+         <li class="six_a"><img src="img/diqiu.png" alt="" class="six_aa"></li>
+         <li class="six_a1">Volvo Cars 沃尔沃汽车中国官网</li>
+     </ul>
+     <div class="seven">Change Location ></div>
+     <div class="sevens">版权所有 @ 2018 沃尔沃汽车销售（上<br>海）有限公司（或其附属公司或许可<br>方）| 沪ICP备13015731号</div>
+     <ul class="seven_">
+         <li class="seven_a">法律声明</li>
+         <li class="seven_b">|</li>
+         <li class="seven_c">客户隐私政策</li>
+     </ul>
+     <ul class="zzz">
+         <li class="azz">V</li>
+         <li class="azz">O</li>
+         <li class="azz">L</li>
+         <li class="azz">V</li>
+         <li class="azz">O</li>
+     </ul>
+    <a href=""><div class="xxxx"><div class="xxx">返回顶部<p class="xxz"></p></div></div></a> 
+ </div>
+</body>
+</html>
